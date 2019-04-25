@@ -3,3 +3,9 @@ build/
 __pycache__/
 temp*
 .pytest*
+test-results/
+htmlcov/
+MANIFEST
+.tox/
+*.egg-info
+.coverage
