@@ -32,7 +32,8 @@ pip install .
 ```
 
 This will compile the C code, and install the implementations as submodules of the main `pyextensions` module. 
-If you're on Windows, you'll need Visual C++ for compiling. This is why distribution packages exist for different platforms. As a user, you shouldn't have to compile the code. 
+
+If you're on Windows, you'll need Visual C++ for compiling. This is why distribution packages exist for different platforms. As a user, you shouldn't have to compile the code.
 
 You can find the example in [examples](./example/main.py). 
 
