@@ -1,5 +1,4 @@
 from distutils.core import setup, Extension
-import setuptools
 import os
 module1 = Extension('pyextensions.lilterminal',
                     sources = ['src/pyextensions/lilterminal.c'])
