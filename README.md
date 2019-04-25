@@ -21,10 +21,10 @@ There is also a defined structure for defining modules and [this is well documen
 
 Here, I make two submodules to a main module called `pyextensions`: `lilterminal` and `mymath`.
 
-- [`lilterminal`](./src/pyextensions/lilterminal.c) implements a tiny interface for using the command prompt using C's `system` function..
-- [`mymath`](./src/pyextensions/mymath.c) implements a simple add operation, showing how to input multiple arguments into a function
+- [`lilterminal`](./src/pyextensions/lilterminal.c) implements a tiny interface for using the command prompt using C's `system` function.
+- [`mymath`](./src/pyextensions/mymath.c) implements a simple add operation, showing how to input multiple arguments into a user function.
 
-### Instructions on this example
+### Setting up this example
 
 To install this example, go into the containing folder and run:
 ```
