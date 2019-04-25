@@ -15,14 +15,14 @@ This works based on the fact C code and routines may be run through Python throu
 
 ### How?
 
-[There is a C header file](https://github.com/python/cpython/blob/master/Include/Python.h) available through CPython that gives you the tools for for the conversion of Python Objects into C data, letting you convert from and to Python Objects within C code for processing or whatever else. 
+[There is a C header file](https://github.com/python/cpython/blob/master/Include/Python.h) available through CPython that gives you the tools for the conversion of Python Objects into C data, letting you convert from and to Python Objects within C code for processing or whatever else. 
 
 There is also a defined structure for defining modules and [this is well documented](https://docs.python.org/3/c-api/).
 
-Here I make two submodules to a main module called `pyextensions`: `lilterminal` and `mymath`.
+Here, I make two submodules to a main module called `pyextensions`: `lilterminal` and `mymath`.
 
-- `lilterminal` implements a tiny interface for using the command prompt using C's `system` function..
-- `mymath` implements a simple add operation, showing how to input multiple arguments into a function
+- [`lilterminal`](./src/pyextensions/lilterminal.c) implements a tiny interface for using the command prompt using C's `system` function..
+- [`mymath`](./src/pyextensions/mymath.c) implements a simple add operation, showing how to input multiple arguments into a function
 
 ### Instructions on this example
 
