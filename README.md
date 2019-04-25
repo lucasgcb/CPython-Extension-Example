@@ -9,7 +9,7 @@ This works based on the fact C code and routines may be run through Python throu
 
 - Sometimes you have some effective **C code you want to interface** with something easier to work with and couple stuff to.
 
-- Routines of compiled code in your Python scripts **increase performance**. Loops and other things within Python is extremely costly, not so much in C.
+- Routines of compiled code in your Python scripts **increase performance**. Loops and other things within Python can be  extremely costly, not so much in C.
 
 - This also gives you **free type checking** since the argument types are explicit.
 
