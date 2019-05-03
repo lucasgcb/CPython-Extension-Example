@@ -2,9 +2,9 @@
 
 ### About
 
-This repository contains an example project where C code wrapped and compiled through a setup script. 
+This repository contains an example project where C code is wrapped and compiled through a setup.py installation script. 
 
-This works based on the fact C code and routines may be run through Python through its implementation in [CPython, the reference interpreter of Python ("standard")](https://www.python.org/download/alternatives/).
+This works based on the fact C code and routines may be run through Python through its reference implementation in [CPython](https://www.python.org/download/alternatives/).
 ### Why?
 
 - Sometimes you have some effective **C code you want to interface** with something easier to work with and couple stuff to.
