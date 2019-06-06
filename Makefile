@@ -12,6 +12,7 @@ clean:
 	rm -rf dist/*
 
 dev:
+	pip install -r dev_dependencies.txt
 	pip install .
 
 package:
