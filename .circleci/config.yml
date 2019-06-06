@@ -50,9 +50,10 @@ jobs:
         - run:
             name: init .pypirc
             command: |
-              echo -e "[pypi]" >> ~/.pypirc
-              echo -e "username = lucasgcb" >> ~/.pypirc
-              echo -e "password = $PYPI_PASSWORD" >> ~/.pypirc
+              echo -e "[testpypi]" >> ~/.pypirc
+              echo -e "repository: https://test.pypi.org/legacy/" >> ~/.pypirc
+              echo -e "username: lucasgcb" >> ~/.pypirc
+              echo -e "password: $PYPI_PASSWORD" >> ~/.pypirc
         - run:
             name: create packages
             command: |
@@ -61,4 +62,4 @@ jobs:
             name: upload to test-pypi
             command: |
               . venv/bin/activate
-              twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+              twine upload --repository testpypi dist/*
