@@ -1,18 +1,19 @@
-from distutils.core import setup, Extension
 import os
+import sys
+
+from setuptools import setup,Extension
+from setuptools.command.install import install
+#https://circleci.com/blog/continuously-deploying-python-packages-to-pypi-with-circleci/
+# circleci.py version
+
+
 module1 = Extension('pyextensions.lilterminal',
                     sources = ['src/pyextensions/lilterminal.c'])
 
 module2 = Extension('pyextensions.mymath',
                     sources = ['src/pyextensions/mymath.c'])
 
-import os
-import sys
 
-from setuptools import setup
-from setuptools.command.install import install
-#https://circleci.com/blog/continuously-deploying-python-packages-to-pypi-with-circleci/
-# circleci.py version
 VERSION = "0.1.0-beta"
 
 def readme():
