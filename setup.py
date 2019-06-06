@@ -14,7 +14,7 @@ module2 = Extension('pyextensions.mymath',
                     sources = ['src/pyextensions/mymath.c'])
 
 
-VERSION = "0.1.6"
+VERSION = "1.0.0"
 
 def readme():
     """print long description"""
